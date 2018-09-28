@@ -15,7 +15,7 @@ BOOL ChkAlpa(char ch)
         return ERR;
     }
 
-    if(ch>='A' && ch<='z')
+    if((ch>='A' && ch<='Z')||(ch>='a' && ch<='z'))
     {
         return TRUE;
     }
