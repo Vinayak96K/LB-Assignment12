@@ -1,0 +1,26 @@
+#include"MyHeader.h"
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Function Name: ChkAlpha
+//  Description: Accepts a character and returns true if it is an alphabet otherwise it returns false.
+//  Input: char[IN]
+//  Output: BOOL[OUT]
+//  Author: Vinayak Mahendra Patil
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+BOOL ChkAlpa(char ch)
+{
+    if(ch=='\0')
+    {
+        return ERR;
+    }
+
+    if(ch>='A' && ch<='z')
+    {
+        return TRUE;
+    }
+    else
+    {
+        return FALSE;
+    }
+}

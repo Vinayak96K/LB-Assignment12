@@ -1,0 +1,26 @@
+#include"MyHeader.h"
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Function Name: ChkSmall
+//  Description: Accepts a character and returns true if it is a small alphabet otherwise it returns false.
+//  Input: char[IN]
+//  Output: BOOL[OUT]
+//  Author: Vinayak Mahendra Patil
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+BOOL ChkSmall(char ch)
+{
+    if(ch=='\0')
+    {
+        return ERR;
+    }
+
+    if(ch>='a' && ch<='z')
+    {
+        return TRUE;
+    }
+    else
+    {
+        return FALSE;
+    }
+}

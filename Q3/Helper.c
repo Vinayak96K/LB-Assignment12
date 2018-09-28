@@ -1,0 +1,26 @@
+#include"MyHeader.h"
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Function Name: ChkDigit
+//  Description: Accepts a character and returns true if it is a digit otherwise it returns false.
+//  Input: char[IN]
+//  Output: BOOL[OUT]
+//  Author: Vinayak Mahendra Patil
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+BOOL ChkDigit(char ch)
+{
+    if(ch=='\0')
+    {
+        return ERR;
+    }
+
+    if(ch>=48 && ch<=57)
+    {
+        return TRUE;
+    }
+    else
+    {
+        return FALSE;
+    }
+}
